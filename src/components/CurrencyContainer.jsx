@@ -150,15 +150,13 @@ export default function CurrencyContainer() {
         </Table>
       </TableContainer>
       <section className="">
-      <h2 className="text-center text-[1.2rem] max-md:flex hidden font-bold ">United State Dollars against Other Countries</h2>
+      <h2 className="text-center text-[1.2rem] max-md:flex hidden font-bold ">United State Dollars against Other<br/> Countries</h2>
       <TableContainer className=" mt-[2em] max-md:flex hidden " component={Paper}>
         <Table sx={{ width: 10}} aria-label="simple table">
           <TableHead className="bg-[#5543ff]">
             <TableRow>
               <TableCell ><strong>Currency & Symbol</strong></TableCell>
               <TableCell align="right"><strong>Exchange Rate</strong> </TableCell>
-              <TableCell align="right"><strong>Currency & Symbol</strong></TableCell>
-              <TableCell align="right"><strong>Exchange Rate</strong></TableCell>
             </TableRow>
           </TableHead>
           <TableBody className="bg-[#3e99ff]">
