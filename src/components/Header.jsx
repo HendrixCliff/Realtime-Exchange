@@ -7,7 +7,7 @@ import {MdOutlineConnectWithoutContact} from 'react-icons/md';
 
 export default function Header() {
   return (
-    <header className=" w-[99%] justify-between fixed flex z-10 h-[7em] max-md:h-[5em] mx-[.2em] bg-[#ff72dc]">
+    <header className=" w-[99%] justify-between fixed flex z-10 h-[7em] max-md:h-[6em] mx-[.2em] bg-[#ff72dc]">
      
       <Link to="/"><SiWebmoney className=" flex max-md:hidden ml-[4em] mt-[.5em] text-[#3e27ff]" size={90}/></Link>
       <Link to="/"><SiWebmoney className="max-md:flex hidden ml-[.1em] mr-[4em] mt-[.5em] text-[#3e27ff]" size={60}/></Link>
