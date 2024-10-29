@@ -156,7 +156,7 @@ export default function CryptoCurrencyContainer2() {
       <TableCell align="right"><strong>FROM SYMBOL</strong></TableCell>
         <TableCell align="right"><strong>PRICE</strong></TableCell>
         <TableCell align="right"><strong>HIGH DAY</strong> </TableCell>
-        <TableCell align="right"><strong>LAST UPDATE</strong></TableCell>
+    
       </TableRow>
     </TableHead>
     <TableBody className="bg-[#3e99ff]">
@@ -164,56 +164,51 @@ export default function CryptoCurrencyContainer2() {
         <TableCell align="right">{cryptoCurrencyData3["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData3["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData3["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData3["LASTUPDATE"]}</TableCell>
+          
         </TableRow>
         <TableRow>
         <TableCell align="right">{cryptoCurrencyData1["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData1["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData1["HIGHDAY"]}</TableCell>
-          <TableCell align="right">{cryptoCurrencyData1["LASTUPDATE"]}</TableCell>
+          
         </TableRow>
         <TableRow>
         <TableCell align="right">ETH{cryptoCurrencyData2["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData2["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData2["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData2["LASTUPDATE"]}</TableCell>
+          
          
         </TableRow>
         <TableRow>
         <TableCell align="right">{cryptoCurrencyData4["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData4["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData4["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData4["LASTUPDATE"]}</TableCell>
         </TableRow>
         <TableRow>
         <TableCell align="right">{cryptoCurrencyData5["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData5["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData5["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData5["LASTUPDATE"]}</TableCell>
         </TableRow>
         <TableRow>
         <TableCell align="right">{cryptoCurrencyData6["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData6["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData6["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData6["LASTUPDATE"]}</TableCell>
        </TableRow>
         <TableRow>
         <TableCell align="right">{cryptoCurrencyData7["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData7["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData7["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData7["LASTUPDATE"]}</TableCell>
       </TableRow>
         <TableRow>
         <TableCell align="right">{cryptoCurrencyData8["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData8["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData8["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData8["LASTUPDATE"]}</TableCell>
       </TableRow>
         <TableRow>
         <TableCell align="right">{cryptoCurrencyData9["FROMSYMBOL"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData9["PRICE"]}</TableCell>
           <TableCell align="right">{cryptoCurrencyData9["HIGHDAY"]} </TableCell>
-          <TableCell align="right">{cryptoCurrencyData9["LASTUPDATE"]}</TableCell>
+          
         </TableRow>
     </TableBody>
   </Table>

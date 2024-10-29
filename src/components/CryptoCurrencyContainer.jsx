@@ -105,8 +105,7 @@ export default function CryptoCurrencyContainer() {
           <TableRow>
 
             <TableCell align="right"><strong>From Currency Name</strong> </TableCell>
-            <TableCell align="right"><strong>To Currency Code</strong></TableCell>
-            <TableCell align="right"><strong>To Currency Name</strong></TableCell>
+           
             <TableCell align="right"><strong>Exchange Rate</strong> </TableCell>
             <TableCell align="right"><strong>Last Refreshed</strong> </TableCell>
             
@@ -117,8 +116,6 @@ export default function CryptoCurrencyContainer() {
             <TableRow>
               
               <TableCell align="right">{exchangeRateData1["2. From_Currency Name"]}</TableCell>
-              <TableCell align="right">{exchangeRateData1["3. To_Currency Code"]}</TableCell>
-              <TableCell align="right">{exchangeRateData1["4. To_Currency Name"]}</TableCell>
               <TableCell align="right">{exchangeRateData1["5. Exchange Rate"]}</TableCell>
               <TableCell align="right">{exchangeRateData1["6. Last Refreshed"]}</TableCell>
              
@@ -126,8 +123,6 @@ export default function CryptoCurrencyContainer() {
             <TableRow>
               
               <TableCell align="right">{exchangeRateData2["2. From_Currency Name"]}</TableCell>
-              <TableCell align="right">{exchangeRateData2["3. To_Currency Code"]}</TableCell>
-              <TableCell align="right">{exchangeRateData2["4. To_Currency Name"]}</TableCell>
               <TableCell align="right">{exchangeRateData2["5. Exchange Rate"]}</TableCell>
               <TableCell align="right">{exchangeRateData2["6. Last Refreshed"]}</TableCell>
               
@@ -135,8 +130,6 @@ export default function CryptoCurrencyContainer() {
             <TableRow>
              
               <TableCell align="right">{exchangeRateData3["2. From_Currency Name"]}</TableCell>
-              <TableCell align="right">{exchangeRateData3["3. To_Currency Code"]}</TableCell>
-              <TableCell align="right">{exchangeRateData3["4. To_Currency Name"]}</TableCell>
               <TableCell align="right">{exchangeRateData3["5. Exchange Rate"]}</TableCell>
               <TableCell align="right">{exchangeRateData3["6. Last Refreshed"]}</TableCell>
             
@@ -144,8 +137,6 @@ export default function CryptoCurrencyContainer() {
             <TableRow>
               
               <TableCell align="right">{exchangeRateData4["2. From_Currency Name"]}</TableCell>
-              <TableCell align="right">{exchangeRateData4["3. To_Currency Code"]}</TableCell>
-              <TableCell align="right">{exchangeRateData4["4. To_Currency Name"]}</TableCell>
               <TableCell align="right">{exchangeRateData4["5. Exchange Rate"]}</TableCell>
               <TableCell align="right">{exchangeRateData4["6. Last Refreshed"]}</TableCell>
              
@@ -153,8 +144,6 @@ export default function CryptoCurrencyContainer() {
             <TableRow>
               
               <TableCell align="right">{exchangeRateData5["2. From_Currency Name"]}</TableCell>
-              <TableCell align="right">{exchangeRateData5["3. To_Currency Code"]}</TableCell>
-              <TableCell align="right">{exchangeRateData5["4. To_Currency Name"]}</TableCell>
               <TableCell align="right">{exchangeRateData5["5. Exchange Rate"]}</TableCell>
               <TableCell align="right">{exchangeRateData5["6. Last Refreshed"]}</TableCell>
              

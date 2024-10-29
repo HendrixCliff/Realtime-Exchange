@@ -39,20 +39,38 @@ export default function CurrencyContainer() {
                <TableCell align="right">{currencyExchangeRate["ARS"]}</TableCell>
                <TableCell>United Kingdom Pound Sterling £</TableCell>
                <TableCell align="right">{currencyExchangeRate["GBP"]}</TableCell>
-               <TableCell>New Zealand Dollar</TableCell>
-               <TableCell align="right">{currencyExchangeRate["NZD"]}</TableCell>
+              
                </TableRow>
                <TableRow>
-               <TableCell>Qatari Riyal ﷼</TableCell>
+
+               </TableRow>
+               <TableRow>
+                
+                </TableRow>
+                <TableRow>
+                
+                </TableRow>
+                <TableRow>
+                <TableCell>Japanese Yen ¥</TableCell>
+               <TableCell align="right">{currencyExchangeRate["JPY"]}</TableCell>
+               <TableCell>Kuwaiti Dinar د.ك</TableCell>
+               <TableCell align="right">{currencyExchangeRate["KWD"]}</TableCell>
+                </TableRow>
+                <TableRow>
+                <TableCell>Qatari Riyal ﷼</TableCell>
                <TableCell align="right">{currencyExchangeRate["QAR"]}</TableCell>
                <TableCell>Jordanian Dinar د.ا</TableCell>
                <TableCell align="right">{currencyExchangeRate["JOD"]}</TableCell>
+                </TableRow>
+               <TableRow>
+               
                <TableCell>South Sudanese pound</TableCell>
                <TableCell align="right">{currencyExchangeRate["SSP"]}</TableCell>
+               <TableCell>North Korean Won ₩</TableCell>
+               <TableCell align="right">{currencyExchangeRate["KPW"]}</TableCell>
                </TableRow>
                <TableRow>
-                <TableCell>North Korean Won ₩</TableCell>
-               <TableCell align="right">{currencyExchangeRate["KPW"]}</TableCell>
+               
                <TableCell>Omani Rial ﷼</TableCell>
                <TableCell align="right">{currencyExchangeRate["OMR"]}</TableCell>
                <TableCell>Kazakhstani Tenge лв</TableCell>
@@ -61,10 +79,7 @@ export default function CurrencyContainer() {
                <TableRow>
                 <TableCell>Israeli New Sheqel ₪</TableCell>
                <TableCell align="right">{currencyExchangeRate["ILS"]}</TableCell>
-               <TableCell>Japanese Yen ¥</TableCell>
-               <TableCell align="right">{currencyExchangeRate["JPY"]}</TableCell>
-               <TableCell>Kuwaiti Dinar د.ك</TableCell>
-               <TableCell align="right">{currencyExchangeRate["KWD"]}</TableCell>
+              
                </TableRow>
                <TableRow>
                 <TableCell>Lebanese Pound £</TableCell>
@@ -77,10 +92,7 @@ export default function CurrencyContainer() {
                <TableRow>
                 <TableCell>Chinese Yuan Renminbi ¥</TableCell>
                <TableCell align="right">{currencyExchangeRate["CNY"]}</TableCell>
-               <TableCell>Afghanistani Afghani 	؋</TableCell>
-               <TableCell align="right">{currencyExchangeRate["AFN"]}</TableCell>
-               <TableCell>Indian Rupee ₹</TableCell>
-               <TableCell align="right">{currencyExchangeRate["INR"]}</TableCell>
+               
                </TableRow>
                <TableRow>
                <TableCell>Nigeria</TableCell>
@@ -161,6 +173,12 @@ export default function CurrencyContainer() {
                <TableCell align="right">{currencyExchangeRate["NZD"]}</TableCell>
                 <TableCell>Qatari Riyal ﷼</TableCell>
                <TableCell align="right">{currencyExchangeRate["QAR"]}</TableCell>
+               </TableRow>
+               <TableRow>
+                 <TableCell>Thai Baht ฿</TableCell>
+               <TableCell align="right">{currencyExchangeRate["THB"]}</TableCell>
+               <TableCell>Egyptian Pound £</TableCell>
+               <TableCell align="right">{currencyExchangeRate["EGP"]}</TableCell>
                </TableRow>
                <TableRow>
                <TableCell>Jordanian Dinar د.ا</TableCell>

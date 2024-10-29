@@ -28,14 +28,14 @@ return (
     <Header/>
   <section className="flex">
     <section className="bg-[#ff7f26] max-md:w-[15%]" >
-   <section className=" gap-[.8em] pb-[5em] bg-[#ffffff]  px-[2em] max-md:px-[1em] text-[1.2rem] flex flex-col text-[#000000] font-bold">
+   <section className=" gap-[.8em] max-md:text-[1rem] pb-[5em] bg-[#ffffff]  px-[2em] max-md:px-[0em] text-[1.2rem] flex flex-col text-[#000000] font-bold">
    <Link  className="mt-[8em] w-[6em] max-md:w-[5em] text-[#ff7f26] border-solid border-[.2em] border-[#ff7f26]" to="crypto-currency-container">Crypto Exchange</Link>
     <Link className="border-solid w-[6em] max-md:w-[5em] text-[#ff7f26] border-[.2em] border-[#ff7f26]" to="currency-container">Forex Exchange</Link>
     </section>
    </section>
     
     <section className="mt-[8em]">
-      <section className="flex gap-[2em] max-md:gap-[.6em] ml-[20%] max-md:ml-[14%] mb-[1em] ">
+      <section className="flex gap-[2em] max-md:gap-[.6em] ml-[20%] max-md:ml-[16%] mb-[1em] ">
       <img className="w-[50%] max-md:w-[55%] h-[10em]" src="../images/trump.webp"/>
       <section className="font-bold max-md:text-[.7rem] text-[1.2rem] text-[#5543ff]">
       <GiVote className="animate-bounce text-[#ffc92d] delay-700 " size={70}/>
