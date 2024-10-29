@@ -32,7 +32,7 @@ export default function CryptoCurrencyContainer2() {
       : (    
     <section className="ml-[10em] max-md:ml-[.6em]">
      <TableContainer className="max-md:hidden flex" component={Paper} >
-  <Table sx={{width: 50, minWidth: 50, color: "#ffffff" }}  aria-label="simple table">
+  <Table sx={{width: 50, minWidth: 50, color: "#ffffff", fontWeight: "semi-bold" }}  aria-label="simple table">
     <TableHead className="bg-[#5543ff]">
       <TableRow>
       <TableCell align="right"><strong>FROM SYMBOL</strong></TableCell>
@@ -150,7 +150,7 @@ export default function CryptoCurrencyContainer2() {
 </TableContainer>
 
 <TableContainer className="max-md:flex hidden" component={Paper} >
-  <Table sx={{width: 10, color: "#ffffff"}}  aria-label="simple table">
+  <Table sx={{width: 10, color: "#ffffff", fontWeight: "semi-bold"}}  aria-label="simple table">
     <TableHead className="bg-[#5543ff]">
       <TableRow>
       <TableCell align="right"><strong>FROM SYMBOL</strong></TableCell>
