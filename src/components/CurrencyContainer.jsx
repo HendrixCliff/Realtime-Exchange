@@ -144,7 +144,7 @@ export default function CurrencyContainer() {
       <section className="">
       <h2 className="text-center text-[1.2rem] max-md:flex hidden font-bold ">United State Dollars against Other<br/> Countries</h2>
       <TableContainer className=" mt-[2em] max-md:flex max-md:ml-[1em] hidden " component={Paper}>
-        <Table sx={{ width: 10, color: "#ffffff", fontWeight: "semi-bold"}} aria-label="simple table">
+        <Table sx={{ width: 40, color: "#ffffff", fontWeight: "semi-bold"}} aria-label="simple table">
           <TableHead className="bg-[#5543ff]">
             <TableRow>
               <TableCell ><strong>Currency & Symbol</strong></TableCell>
@@ -153,7 +153,7 @@ export default function CurrencyContainer() {
           </TableHead>
           <TableBody className="bg-[#3e99ff]">
                <TableRow >
-                <TableCell>Argentine Peso</TableCell>
+                <TableCell className="text-[#ffffff]">Argentine Peso</TableCell>
                <TableCell align="right">{currencyExchangeRate["ARS"]}</TableCell>
                
                </TableRow>

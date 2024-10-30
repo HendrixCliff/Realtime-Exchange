@@ -31,7 +31,7 @@ export default function CryptoCurrencyContainer2() {
       (<div className="font-bold text-[3rem] max-md:text-[1.5rem] text-[#eba3ff] text-center mt-[3em]">Loading...</div>) : error ?  (<div>Error: {error}</div>)
       : (    
     <section className="ml-[10em] max-md:ml-[.6em]">
-     <TableContainer className="max-md:hidden flex" component={Paper} >
+     <TableContainer className="max-md:hidden flex text-[#ffffff]" component={Paper} >
   <Table sx={{width: 50, minWidth: 50, color: "#ffffff", fontWeight: "semi-bold" }}  aria-label="simple table">
     <TableHead className="bg-[#5543ff]">
       <TableRow>
@@ -149,7 +149,7 @@ export default function CryptoCurrencyContainer2() {
   </Table>
 </TableContainer>
 
-<TableContainer className="max-md:flex hidden" component={Paper} >
+<TableContainer className="max-md:flex hidden text-[#ffffff]" component={Paper} >
   <Table sx={{width: 10, color: "#ffffff", fontWeight: "semi-bold"}}  aria-label="simple table">
     <TableHead className="bg-[#5543ff]">
       <TableRow>
