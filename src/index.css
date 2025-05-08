@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+* {
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
