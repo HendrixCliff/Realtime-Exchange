@@ -32,14 +32,14 @@ return (
   <section className="flex">
     <section className="bg-[#ffffff] w-[8%] max-md:w-[2%]" >
    <section className=" gap-[.8em] max-md:text-[1rem] pb-[5em] bg-[#ffffff]  px-[2em] max-md:px-[0em] text-[1.2rem] flex flex-col text-[#000000] font-bold">
-   <Link  className="mt-[8em] flex w-[6em] max-md:w-[5em] text-[#ff7f26] text-center border-solid border-[.2em]  border-[#ff7f26]" to="crypto-currency-container"><div>Crypto Exchange</div> <MdCurrencyBitcoin color={"gold"} size={40}/></Link>
-    <Link className="border-solid flex w-[6em] max-md:w-[5em] text-[#ff7f26] border-[.2em] border-[#ff7f26]" to="currency-container"><div>Forex Exchange</div> <BsCurrencyExchange color={"#40ff5e"} size={40} /></Link>
+   <Link  className="mt-[8em] flex w-[6em] max-md:w-[5em] text-[#ff7f26] text-center border-solid border-[.2em]  border-[#ff7f26]" to="crypto-currency-container"><div>Crypto Exchange</div> <MdCurrencyBitcoin className='max-[600px]:w-[100%]' color={"gold"} size={50}/></Link>
+    <Link className="border-solid flex w-[6em] max-md:w-[5em] text-[#ff7f26] border-[.2em] border-[#ff7f26]" to="currency-container"><div>Forex Exchange</div> <BsCurrencyExchange className='max-[600px]:w-[100%]' color={"#40ff5e"} size={50} /></Link>
     </section>
    </section>
     
     <section className="mt-[8em]">
       <section className="flex gap-[2em] max-md:gap-[.6em] ml-[20%] max-md:ml-[16%] mb-[1em] ">
-      <img className="w-[50%] max-md:w-[55%] h-[10em]" src="../images/trump.webp"/>
+      <img className="w-[50%] max-md:w-[55%] max-[600px]:ml-[1em] h-[10em]" src="../images/trump.webp"/>
       <section className="font-bold max-md:text-[.7rem] text-[1.2rem] text-[#5543ff]">
       <GiVote className="animate-bounce text-[#ffc92d] delay-700 " size={70}/>
       <h3>Make America Great Again</h3>
