@@ -88,10 +88,10 @@ export default function CurrencyContainer() {
         </Table>
       </TableContainer>
 
-      {/* Mobile View */}
+    
       <section className="max-md:flex hidden flex-col items-center mt-[2em]">
         <h2 className="text-center text-[1.2rem] font-bold mb-4">
-          USD Exchange Rates (Mobile View)
+          USD Exchange Rates
         </h2>
         <TableContainer className="w-full max-w-[95%]" component={Paper}>
           <Table sx={{ minWidth: 100 }} aria-label="mobile exchange table">
