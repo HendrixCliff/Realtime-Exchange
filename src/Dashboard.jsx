@@ -39,7 +39,7 @@ return (
     
     <section className="mt-[8em]">
       <section className="flex gap-[2em] max-md:gap-[.6em] ml-[20%] max-md:ml-[16%] mb-[1em] ">
-      <img className="w-[50%] max-md:w-[55%] max-[600px]:ml-[1em] h-[10em]" src="../images/trump.webp"/>
+      <img className="w-[50%] max-md:w-[55%] max-[600px]:ml-[1.2em] h-[10em]" src="../images/trump.webp"/>
       <section className="font-bold max-md:text-[.7rem] text-[1.2rem] text-[#5543ff]">
       <GiVote className="animate-bounce text-[#ffc92d] delay-700 " size={70}/>
       <h3>Make America Great Again</h3>
