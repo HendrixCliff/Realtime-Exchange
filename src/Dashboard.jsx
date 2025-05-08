@@ -7,6 +7,9 @@ import  CryptoCurrencyNews from './components/CryptoCurrencyNews';
 import { Link, Outlet} from "react-router-dom"
 import { GiVote} from 'react-icons/gi';
 import Footer from './components/Footer';
+import { MdCurrencyBitcoin } from "react-icons/md";
+import { BsCurrencyExchange } from "react-icons/bs";
+
 
  function Dashboard() {
   const dispatch = useDispatch()
@@ -27,10 +30,10 @@ return (
   <section className="overflow-hidden">
     <Header/>
   <section className="flex">
-    <section className="bg-[#ffffff] w-[10%] max-md:w-[9%]" >
+    <section className="bg-[#ffffff] w-[8%] max-md:w-[2%]" >
    <section className=" gap-[.8em] max-md:text-[1rem] pb-[5em] bg-[#ffffff]  px-[2em] max-md:px-[0em] text-[1.2rem] flex flex-col text-[#000000] font-bold">
-   <Link  className="mt-[8em] w-[6em] max-md:w-[5em] text-[#ff7f26] border-solid border-[.2em] border-[#ff7f26]" to="crypto-currency-container">Crypto Exchange</Link>
-    <Link className="border-solid w-[6em] max-md:w-[5em] text-[#ff7f26] border-[.2em] border-[#ff7f26]" to="currency-container">Forex Exchange</Link>
+   <Link  className="mt-[8em] flex w-[6em] max-md:w-[5em] text-[#ff7f26] text-center border-solid border-[.2em]  border-[#ff7f26]" to="crypto-currency-container"><div>Crypto Exchange</div> <MdCurrencyBitcoin color={"gold"} size={40}/></Link>
+    <Link className="border-solid flex w-[6em] max-md:w-[5em] text-[#ff7f26] border-[.2em] border-[#ff7f26]" to="currency-container"><div>Forex Exchange</div> <BsCurrencyExchange color={"#40ff5e"} size={40} /></Link>
     </section>
    </section>
     
