@@ -9,7 +9,7 @@ import { GiVote} from 'react-icons/gi';
 import Footer from './components/Footer';
 import { MdCurrencyBitcoin } from "react-icons/md";
 import { BsCurrencyExchange } from "react-icons/bs";
-
+import { SiConvertio } from "react-icons/si";
 
 
  function Dashboard() {
@@ -28,29 +28,29 @@ dispatch(fetchData())
 // https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=USD,EUR?api_key={07eaece4a2d2a139e158e955f2fbda6ca03d3b90fc567321ff9fa4e7debbb0a0}
 // https://min-api.cryptocompare.com/data/top/totalvolfull?limit=10&tsym=USD?api_key={07eaece4a2d2a139e158e955f2fbda6ca03d3b90fc567321ff9fa4e7debbb0a0}
 return (
-  <section className="overflow-hidden">
+  <section className="overflow-hidden mt-[0em]">
     <Header/>
   <section className="">
     <section className="bg-[#ffffff] w-[8%] max-md:w-[8%]" >
     <section className="gap-[.8em]  pb-[5em] bg-[#ffffff] px-[2em] max-md:px-[0em] text-[1.2rem] flex flex-col font-bold">
-  <Link className="mt-[8em] w-[6em]  fixed max-md:top-[0.9em] max-md:bottom-[15em] left-[3em] max-md:left-[2em] max-md:right-[27em] max-md:w-[5em]" to="crypto-currency-container">
-    <MdCurrencyBitcoin className="text-[50px] max-[600px]:text-[40px]" color="gold" />
+  <Link className="mt-[8em]  fixed max-md:top-[0.9em] max-md:bottom-[15em] left-[3em] max-md:left-[2em] max-md:right-[27em] max-md:w-[5em]" to="crypto-currency-container">
+    <MdCurrencyBitcoin className="text-[50px] max-[600px]:text-[40px]" size={50} color="gold" />
   </Link>
-  <Link className="w-[6em] fixed top-[12.5em] max-md:top-[12.5em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="currency-container">
-    <BsCurrencyExchange className="text-[50px] max-[600px]:text-[40px]" color="#40ff5e" />
+  <Link className=" fixed top-[12.5em] max-md:top-[12.5em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="currency-container">
+    <BsCurrencyExchange className="text-[50px] max-[600px]:text-[40px]" size={45} color="#40ff5e" />
   </Link>
+  <Link className=" fixed top-[18.5em] max-md:top-[12.5em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="crypto-to-naira-converter">
+     <SiConvertio className="text-[50px] max-[600px]:text-[40px]" size={45} color="#a39c9c" />
+  </Link>
+
 </section>
 
    </section>
     
-    <section className="mt-[8em]">
-      <section className="flex gap-[2em] max-md:gap-[.6em] ml-[20%] max-md:ml-[16%] mb-[1em] ">
+    <section className="mt-[2em] max-md:mt-[.5em]">
+      <section className="flex gap-[2em] max-md:gap-[.6em] ml-[20%] items-center max-md:ml-[16%] mb-[1em] ">
       <img className="w-[50%] max-[600px]:w-[40%] max-md:w-[55%] max-[600px]:ml-[1.2em] h-[10em]" src="../images/trump.webp"/>
-      <section className="font-bold max-md:text-[.7rem] text-[1.2rem] text-[#5543ff]">
-      <GiVote className="animate-bounce text-[#ffc92d] delay-700 " size={70}/>
-      <h3>Make America Great Again</h3>
-      <h4 className="text-[#ff242d]">Fight Fight Fight!!!</h4>
-      </section>
+      <h3 className="font-bold max-md:text-[.7rem] text-[1.2rem] text-[#5543ff]">Make America Great Again</h3>
       
       </section>
      <Outlet/>
