@@ -4,6 +4,8 @@ import {
   TableHead, TableRow, Paper
 } from '@mui/material';
 import { useSelector } from 'react-redux';
+import { GiExitDoor } from "react-icons/gi";
+import { Link} from "react-router-dom"
 
 const currencyList = [
   ["ARS", "Argentine Peso"],
@@ -61,10 +63,11 @@ export default function CurrencyContainer() {
 
   return (
     <section>
+      <Link to="/"><GiExitDoor size={36} color={'#ff6e5a'} className="ml-[1.4em]" /></Link>
       <h2 className="text-center text-[1.2rem] font-bold mb-4">
         United States Dollar vs Other Currencies
       </h2>
-
+      
       {/* Desktop View */}
       <TableContainer className="max-md:hidden flex text-[#ffffff]" component={Paper}>
         <Table sx={{ minWidth: 100 }} aria-label="currency exchange table">

@@ -31,11 +31,6 @@ const dataSlice = createSlice({
       })
       .addCase(fetchData.fulfilled, (state, action) => {
         state.loading = false;
-        state.data1 = action.payload.data1;
-        state.data2 = action.payload.data2;
-        state.data3 = action.payload.data3;
-        state.data4 = action.payload.data4;
-        state.data5 = action.payload.data5;
         state.data6 = action.payload.data6;
         state.data7 = action.payload.data7;
         state.data8 = action.payload.data8;

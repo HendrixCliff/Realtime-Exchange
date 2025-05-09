@@ -31,7 +31,26 @@ function NewsCard({ user }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <section className="border-solid border-[#ff7f26] border-b-[.2em] max-md:mt-[1em] overflow-hidden px-[1em] py-[1em]">
+    <section className=" max-md:mt-[1em] overflow-hidden px-[1em] py-[1em]">
+     <section className="relative bg-white overflow-hidden mb-6">
+  <div className="px-[1em] py-[1em]">
+    {/* Your content here */}
+  </div>
+
+  {/* Zigzag bottom border */}
+  <svg
+    className="absolute bottom-0 left-0 w-full"
+    height="20"
+    viewBox="0 0 100 20"
+    preserveAspectRatio="none"
+  >
+    <polygon
+      fill="#ffe6d3"
+      points="0,0 5,20 15,0 25,20 35,0 45,20 55,0 65,20 75,0 85,20 95,0 100,20 100,0 0,0"
+    />
+  </svg>
+</section>
+ 
       {/* Header: Image + Title */}
       <section className="flex gap-[1em] max-md:gap-[.5em] items-center">
         <img

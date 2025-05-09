@@ -2,28 +2,22 @@ import {
   Table, TableBody, TableCell, TableContainer,
   TableHead, TableRow, Paper
 } from '@mui/material';
-import { useSelector } from 'react-redux';
-import CryptoCurrencyContainer from '../components/CryptoCurrencyContainer';
+import { useCryptoList } from '../hooks/useCryptoList';
+import { GiExitDoor } from "react-icons/gi";
+import { Link} from "react-router-dom"
 
 export default function CryptoCurrencyContainer2() {
-  const { data7, error } = useSelector((state) => state.data);
+  const { cryptoList, error } = useCryptoList();
 
  
-  const cryptoList = [
-    data7?.DISPLAY?.BTC?.USD,
-    data7?.DISPLAY?.ETH?.USD,
-    data7?.DISPLAY?.ADA?.USD,
-    data7?.DISPLAY?.SOL?.USD,
-    data7?.DISPLAY?.PI?.USD,
-    data7?.DISPLAY?.BNB?.USD,
-    data7?.DISPLAY?.TON?.USD,
-    data7?.DISPLAY?.NOT?.USD,
-    data7?.DISPLAY?.CORE?.USD,
-  ].filter(Boolean); // filter out any undefined/null
-
-  if (!data7 || !data7.DISPLAY) {
-    return <div className="font-bold text-[3rem] max-md:text-[1.5rem] text-[#eba3ff] text-center mt-[3em]">Loading...</div>;
+  if (!cryptoList.length) {
+    return (
+      <div className="font-bold text-[3rem] max-md:text-[1.5rem] text-[#eba3ff] text-center mt-[3em]">
+        Loading...
+      </div>
+    );
   }
+  
 
   if (error) {
     return <div className="text-red-600 text-center mt-4">Error: {error}</div>;
@@ -31,15 +25,14 @@ export default function CryptoCurrencyContainer2() {
 
   return (
     <>
-      <CryptoCurrencyContainer />
-
+      <Link to="/"><GiExitDoor size={36} color={'#ff6e5a'} className="ml-[1.4em]" /></Link>
       <section className="max-md:ml-[.1em]">
         {/* Desktop Table */}
         <TableContainer className="max-md:hidden flex text-[#ffffff]" component={Paper}>
           <Table sx={{ minWidth: 50 }} aria-label="detailed crypto table">
             <TableHead className="bg-[#ff357f]">
               <TableRow>
-                <TableCell align="center"><strong>FROM SYMBOL</strong></TableCell>
+                <TableCell align="center"><strong>SYMBOL</strong></TableCell>
                 <TableCell align="center"><strong>PRICE</strong></TableCell>
                 <TableCell align="center"><strong>HIGH DAY</strong></TableCell>
                 <TableCell align="center"><strong>LAST UPDATE</strong></TableCell>
@@ -55,11 +48,22 @@ export default function CryptoCurrencyContainer2() {
                   key={i}
                   className="hover:bg-[#52ff28] active:bg-[#ffe4ad]/80 transition duration-200 cursor-pointer"
                 >
-                  <TableCell align="center">{crypto.FROMSYMBOL}</TableCell>
+                  <TableCell align="center">
+                    <div className="flex items-center justify-center gap-2">
+                      <img
+                        src={`https://www.cryptocompare.com${crypto.IMAGEURL}`}
+                        alt={crypto.FROMSYMBOL}
+                        className="w-6 h-6 object-contain"
+                      />
+                      <span>{crypto.FROMSYMBOL}</span>
+                    </div>
+                  </TableCell>
                   <TableCell align="center">{crypto.PRICE}</TableCell>
                   <TableCell align="center">{crypto.HIGHDAY}</TableCell>
                   <TableCell align="center">{crypto.LASTUPDATE}</TableCell>
-                  <TableCell align="center">{crypto.CHANGE24HOUR}</TableCell>
+                  <TableCell align="center" className={crypto.CHANGE24HOUR > 0 ? 'text-green-600' : 'text-red-600'}>
+                    {crypto.CHANGE24HOUR}
+                  </TableCell>
                   <TableCell align="center">{crypto.LOWHOUR}</TableCell>
                   <TableCell align="center">{crypto.HIGHHOUR}</TableCell>
                   <TableCell align="center">{crypto.OPENHOUR}</TableCell>
@@ -70,11 +74,11 @@ export default function CryptoCurrencyContainer2() {
         </TableContainer>
 
         {/* Mobile Table */}
-        <TableContainer className="max-md:flex hidden text-[#ffffff]" component={Paper}>
+        <TableContainer className="max-md:flex hidden overflow-x-auto text-[#ffffff]" component={Paper}>
           <Table sx={{ minWidth: 10 }} aria-label="compact crypto table">
             <TableHead className="bg-[#ff357f]">
               <TableRow>
-                <TableCell align="center"><strong>FROM SYMBOL</strong></TableCell>
+                <TableCell align="center"><strong>SYMBOL</strong></TableCell>
                 <TableCell align="center"><strong>PRICE</strong></TableCell>
                 <TableCell align="center"><strong>HIGH DAY</strong></TableCell>
               </TableRow>
@@ -85,9 +89,22 @@ export default function CryptoCurrencyContainer2() {
                   key={i}
                   className="hover:bg-[#52ff28] active:bg-[#52ff28]/80 transition duration-200 cursor-pointer"
                 >
-                  <TableCell align="center">{crypto.FROMSYMBOL}</TableCell>
+                 <TableCell align="center">
+                      <div className="flex items-center justify-center gap-2">
+                        <img
+                          src={`https://www.cryptocompare.com${crypto.IMAGEURL}`}
+                          alt={crypto.FROMSYMBOL}
+                          className="w-6 h-6 object-contain"
+                        />
+                        <span>{crypto.FROMSYMBOL}</span>
+                      </div>
+                 </TableCell>
+
                   <TableCell align="center">{crypto.PRICE}</TableCell>
-                  <TableCell align="center">{crypto.HIGHDAY}</TableCell>
+                   <TableCell align="center" className={crypto.HIGHDAY > 0 ? 'text-green-600' : 'text-red-600'}>
+                  {crypto.HIGHDAY}
+                </TableCell>
+
                 </TableRow>
               ))}
             </TableBody>
