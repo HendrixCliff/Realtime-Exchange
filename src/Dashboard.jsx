@@ -11,6 +11,7 @@ import { MdCurrencyBitcoin } from "react-icons/md";
 import { BsCurrencyExchange } from "react-icons/bs";
 
 
+
  function Dashboard() {
   const dispatch = useDispatch()
   
@@ -31,11 +32,11 @@ return (
     <Header/>
   <section className="">
     <section className="bg-[#ffffff] w-[8%] max-md:w-[8%]" >
-    <section className="gap-[.8em] fixed max-md:top-[1em] max-md:left-[.5em] max-md:right-[27em] max-md:bottom-[15em] pb-[5em] bg-[#ffffff] px-[2em] max-md:px-[0em] text-[1.2rem] flex flex-col font-bold">
-  <Link className="mt-[8em] w-[6em] max-md:w-[5em]" to="crypto-currency-container">
+    <section className="gap-[.8em]  pb-[5em] bg-[#ffffff] px-[2em] max-md:px-[0em] text-[1.2rem] flex flex-col font-bold">
+  <Link className="mt-[8em] w-[6em]  fixed max-md:top-[0.9em] max-md:bottom-[15em] left-[3em] max-md:left-[2em] max-md:right-[27em] max-md:w-[5em]" to="crypto-currency-container">
     <MdCurrencyBitcoin className="text-[50px] max-[600px]:text-[40px]" color="gold" />
   </Link>
-  <Link className="w-[6em] max-md:w-[5em]" to="currency-container">
+  <Link className="w-[6em] fixed top-[12.5em] max-md:top-[12.5em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="currency-container">
     <BsCurrencyExchange className="text-[50px] max-[600px]:text-[40px]" color="#40ff5e" />
   </Link>
 </section>
