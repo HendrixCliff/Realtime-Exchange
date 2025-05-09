@@ -39,7 +39,7 @@ return (
   <Link className=" fixed top-[12.5em] max-md:top-[12.5em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="currency-container">
     <BsCurrencyExchange className="text-[50px] max-[600px]:text-[40px]" size={45} color="#40ff5e" />
   </Link>
-  <Link className=" fixed top-[18.5em] max-md:top-[12.5em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="crypto-to-naira-converter">
+  <Link className=" fixed top-[18.5em] max-md:top-[18.5em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="crypto-to-naira-converter">
      <SiConvertio className="text-[50px] max-[600px]:text-[40px]" size={45} color="#a39c9c" />
   </Link>
 
