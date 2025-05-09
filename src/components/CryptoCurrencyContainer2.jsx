@@ -8,6 +8,7 @@ import CryptoCurrencyContainer from '../components/CryptoCurrencyContainer';
 export default function CryptoCurrencyContainer2() {
   const { data7, error } = useSelector((state) => state.data);
 
+ 
   const cryptoList = [
     data7?.DISPLAY?.BTC?.USD,
     data7?.DISPLAY?.ETH?.USD,
@@ -73,9 +74,9 @@ export default function CryptoCurrencyContainer2() {
           <Table sx={{ minWidth: 10 }} aria-label="compact crypto table">
             <TableHead className="bg-[#ff357f]">
               <TableRow>
-                <TableCell align="right"><strong>FROM SYMBOL</strong></TableCell>
-                <TableCell align="right"><strong>PRICE</strong></TableCell>
-                <TableCell align="right"><strong>HIGH DAY</strong></TableCell>
+                <TableCell align="center"><strong>FROM SYMBOL</strong></TableCell>
+                <TableCell align="center"><strong>PRICE</strong></TableCell>
+                <TableCell align="center"><strong>HIGH DAY</strong></TableCell>
               </TableRow>
             </TableHead>
             <TableBody className="bg-[#ffe4ad]">
