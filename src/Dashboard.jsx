@@ -45,7 +45,7 @@ return (
              bottom-0 right-[27em] max-md:right-[27em] max-md:w-[5em]"
   to="crypto-to-naira-converter"
 >
-  <SiConvertio className="text-[50px] max-[600px]:text-[40px]" color="#a39c9c" />
+<SiConvertio className="animate-spin-slow text-[50px] max-[600px]:text-[40px]" color="#a39c9c" />
 </Link>
 
 
