@@ -36,7 +36,7 @@ return (
   <Link className="mt-[8em]  fixed z-[999] max-md:top-[-.6em] max-md:bottom-[15em] left-[3em] max-md:left-[2em] max-md:right-[27em] max-md:w-[5em]" to="crypto-currency-container">
     <MdCurrencyBitcoin className="text-[50px] max-[600px]:text-[40px]" size={50} color="gold" />
   </Link>
-  <Link className=" fixed top-[12.5em] z-[999] max-md:top-[11.2em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] max-md:w-[5em]" to="currency-container">
+  <Link className=" fixed top-[12.5em] z-[999] max-md:top-[11.2em] max-md:left-[2.5em] left-[3.5em] bottom-[0em] max-md:bottom-[0em] max-md:right-[27em] right-[27em] w-[7em] max-md:w-[5em]" to="currency-container">
     <BsCurrencyExchange className="text-[50px] max-[600px]:text-[40px]" size={45} color="#40ff5e" />
   </Link>
   <Link
