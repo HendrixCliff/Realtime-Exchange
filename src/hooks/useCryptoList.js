@@ -4,8 +4,8 @@ export function useCryptoList() {
   const { data7, error } = useSelector((state) => state.data);
 
   const symbols = [
-    "BTC", "ETH", "ADA", "SOL", "PI", "BNB", "SHIB", "TON", "NOT", "CORE", "USDC", "CRV", "AAVE", "MATIC", "UNI", "USDT",
-    "NEAR", "APT", "SUI", "EGLD", "TRX", "OP", "ARB", "PEPE", "FLOKI", "BONK", "WIF", "DAI", "FRAX", "GHO", "FET", "AGIX",
+    "BTC", "ETH","MAGA","NMT","VIRTUAL","SUI","NEURAL", "MELANIA", "AKT","SOL", "PI", "BNB", "TRUMP", "TON", "NOT", "CORE", "USDC", "CRV", "AAVE", "MATIC", "UNI", "USDT",
+    "NEAR", "APT",  "EGLD", "TRX","ADA", "OP", "ARB", "PEPE", "SHIB","FLOKI", "BONK", "WIF", "DAI", "FRAX", "GHO", "FET", "AGIX",
     "OCEAN", "AKT", "RNDR", "TAO", "ATOM", "DOT", "RUNE", "CANTO", "COMBO", "IMX", "STARK", "ZKS", "SAND", "MANA", "AXS",
     "ILV", "RARI", "ENJ", "AUDIO", "LOOKS", "JUP", "DYM", "ALT", "TIA", "AEVO", "PENDLE", "GRT", "BICO", "LIT", "ENS",
     "SAFE", "VELA", "NXRA", "BWO", "DBC", "VAI", "NUM", "LUNC", "SKL", "CFX", "SEI", "STRK", "ROSE", "CKB", "XDC", "KAVA",
